@@ -11,6 +11,8 @@ import guIn from './locales/gu-IN';
 import hiIn from './locales/hi-IN';
 import mrIn from './locales/mr-IN';
 import trTr from './locales/tr-TR';
+import esPYG from './locales/es-PYG';
+import ptBR from './locales/pt-BR';
 
 export const DefaultConverterOptions: ConverterOptions = {
   currency: false,
@@ -60,6 +62,10 @@ export class ToWords {
         return mrIn;
       case 'tr-TR':
         return trTr;
+      case 'es-PYG':
+        return esPYG;
+      case 'pt-BR':
+        return ptBR;
     }
     /* eslint-enable @typescript-eslint/no-var-requires */
     throw new Error(`Unknown Locale "${this.options.localeCode}"`);
