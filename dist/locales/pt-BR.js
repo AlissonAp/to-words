@@ -19,6 +19,7 @@ class Locale {
                 only: 'Somente',
                 point: 'Ponto',
             },
+            namedLessThan1000: true,
             numberWordsMapping: [
                 { number: 1000000000000000, value: 'Quadrilhão' },
                 { number: 1000000000000, value: 'Trilão' },
@@ -33,12 +34,12 @@ class Locale {
                 { number: 400, value: 'Quatrocentos' },
                 { number: 300, value: 'Trezentos' },
                 { number: 200, value: 'Duzentos' },
-                { number: 100, value: 'Cem' },
+                { number: 100, value: 'Cento' },
                 { number: 90, value: 'Noventa' },
                 { number: 80, value: 'Oitenta' },
                 { number: 70, value: 'Setenta' },
                 { number: 60, value: 'Sessenta' },
-                { number: 50, value: 'Cinquuenta' },
+                { number: 50, value: 'Cinquenta' },
                 { number: 40, value: 'Quarenta' },
                 { number: 30, value: 'Trinta' },
                 { number: 20, value: 'Vinte' },
@@ -63,7 +64,9 @@ class Locale {
                 { number: 1, value: 'Um' },
                 { number: 0, value: 'Zero' },
             ],
-            exactWordsMapping: [],
+            exactWordsMapping: [
+                { number: 100, value: 'Cem' },
+            ],
         };
     }
 }
